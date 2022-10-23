@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+	padding: 0;
+	height: 100%;
+    background: #000000;
+}
+
+header {
+    margin-top: 50px;
+}
+
+.nav {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.nav p {
+    color:#A7A7A7;
+    align-items: center;
+    margin: auto;
+}
+
+.social-media a {
+    padding-left:15px;
+}
+
+#me {
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+#im {
+    color: #D9D9D9;
+    font-size: 50px;
+}
+
+#me img {
+    border-radius: 50%;
+    border: 5px solid #00C0FD;
+    height: 250px;
+}
+
+#technologies {
+    margin: auto;
+    display: flex;
+    max-width: 1400px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#technologies h2 {
+    color: #CCCCCC;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#technologies p {
+    color: #A7A7A7;
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+#icons img{
+    margin-left: 100px;
+}
+
+#projects {
+    margin: auto;
+    display: flex;
+    max-width: 1400px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+#projects h2 {
+    color: #CCCCCC;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#projects p {
+    color: #A7A7A7;
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+#projects h4 {
+    color: #CCCCCC;
+    font-size: 25px;
+    margin: 10px;
+    text-align: left;
+
+}
+
+#projects p {
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.info-top {
+    margin-bottom: 50px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hbo {
+    margin-right: 50px;
+}
+
+.hbo img{
+    height: 200px;
+}
+
+
+.info {
+    background-color: #363636;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.info a {
+    color: #A7A7A7;
+}
+
+.info a img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.crypto img {
+    height: 200px;
+}
+
+footer {
+    margin:auto;
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: end;
+    padding-bottom: 100px
+}
+
+footer p {
+    color: #A7A7A7;
+    margin-right: 50px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
