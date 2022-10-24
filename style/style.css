@@ -3,6 +3,7 @@ html, body {
 	padding: 0;
 	height: 100%;
     background: #000000;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -17,14 +18,24 @@ header {
     width: 100%;
 }
 
-.nav p {
+.nav a {
     color:#A7A7A7;
     align-items: center;
     margin: auto;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    transform: scale(1.2);
+    color: #ffffff;
 }
 
 .social-media a {
     padding-left:15px;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
 }
 
 #me {
@@ -44,6 +55,8 @@ header {
     border-radius: 50%;
     border: 5px solid #00C0FD;
     height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
 
 #technologies {
@@ -68,8 +81,11 @@ header {
     margin-bottom: 80px;
 }
 
-#icons img{
-    margin-left: 100px;
+#icons {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 #projects {
@@ -109,18 +125,18 @@ header {
     text-align: left;
 }
 
+.premiere {
+    width: 120px;
+}
+
 .info-top {
     margin-bottom: 50px;
 }
 
 .projetos {
     display: flex;
-    flex-direction: row;
-}
-
-
-.hbo {
-    margin-right: 50px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .hbo img{
@@ -138,6 +154,12 @@ header {
 .info a {
     color: #A7A7A7;
 }
+
+.info a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 .info a img {
     height: 20px;
@@ -157,12 +179,179 @@ footer {
     padding-bottom: 100px
 }
 
-footer p {
+footer a {
     color: #A7A7A7;
     margin-right: 50px;
+    text-decoration: none;
 }
 
 footer div {
     display: flex;
     align-items: center;
+}
+
+@media (max-width:1400px) {
+    header {
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header #me {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header #me #im {
+        font-size: 40px;
+    }
+
+    #technologies {
+        max-width: 1200px;
+    }
+
+    #technologies h2 {    
+        font-size: 25px;
+    }
+
+    #technologies p {
+        font-size: 20px;
+    }
+
+    #technologies #icons img {
+        width: 80px;
+    }
+
+    #contact {
+        max-width: 1200px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    header {
+        max-width: 800px;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header #me {
+        margin:auto;
+        display: flex;
+        margin-top: 140px;
+        justify-content: space-around;
+    }
+
+    header #me #im {
+        font-size: 30px;
+    }
+
+    #icons {
+        max-width: 800px;
+    }
+
+    #icons img {
+        width: 80px;
+    }
+
+    #technologies {
+        max-width: 800px;
+    }
+
+    #projects {
+        max-width: 800px;
+    }
+
+    .projetos .info {
+        max-width: 188px;
+    }
+
+    .projetos .info img {
+        height: 105px;
+    }
+
+    .projetos .info a img {
+        height: 20px;
+    }
+
+    #projects h4 {
+        font-size: 15px;
+    }
+
+    #projects p {
+        font-size: 15px;
+    }
+
+    footer {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:767px) {
+    header {
+        max-width: 500px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header #me {
+        display: flex;
+        flex-direction: column;
+        margin: inherit;
+        align-items: center;
+    }
+
+    header #me #im {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    header #me img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #technologies {
+        max-width: 500px;
+    }
+
+    #technologies h2 {    
+        font-size: 20px;
+    }
+
+    #technologies p {
+        font-size: 18px;
+    }
+
+    #technologies #icons img {
+        width: 50px;
+    }
+
+    #projects {
+        max-width: 500px;
+    }
+
+    #projects .info-top h2 {
+        font-size: 20px
+    }
+
+    #contact {
+        max-width: 500px;
+    }
+
+    #contact .social-media {
+        display: none;
+    }
 }
