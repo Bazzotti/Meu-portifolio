@@ -355,3 +355,67 @@ footer div {
         display: none;
     }
 }
+
+@media (max-width:480px){
+    header {
+        max-width: 320px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header #me {
+        display: flex;
+        flex-direction: column;
+        margin: inherit;
+        align-items: center;
+    }
+
+    header #me #im {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    header #me img {
+        height: 120px;
+        width: 120px;
+    }
+
+    #technologies {
+        max-width: 320px;
+    }
+
+    #technologies #icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #technologies #icons img {
+        align-items: center;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .projetos {
+        flex-direction: column;
+        display: contents;
+    }
+
+    .projetos .hbo {
+        margin-bottom: 15px;
+    }
+
+    #contact {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    #contact div {
+        display: grid;
+    }
+
+    #contact div a{
+        margin-bottom: 15px;
+    }
+}
