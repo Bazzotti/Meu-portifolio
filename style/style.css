@@ -351,8 +351,15 @@ footer div {
         max-width: 500px;
     }
 
-    #contact .social-media {
-        display: none;
+    footer div {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #contact div a{
+        margin: auto;
+        margin-bottom: 15px;
     }
 }
 
@@ -412,10 +419,14 @@ footer div {
     }
 
     #contact div {
-        display: grid;
+        display: flex;
+        margin: auto;
+        align-items: center;
     }
 
     #contact div a{
+        margin: auto;
         margin-bottom: 15px;
+        display: flex;
     }
 }
